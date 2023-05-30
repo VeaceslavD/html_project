@@ -11,11 +11,12 @@
         * {
             box-sizing: border-box;
         }
+
         body {
             background-color: lightgrey;
         }
 
-        header {
+        .page-header {
             text-align: center;
         }
 
@@ -31,7 +32,7 @@
             margin-left: 65px;
             margin-right: 45%;
         }
-        
+
         article {
             margin-left: 45%;
             margin-top: 70px;
@@ -42,6 +43,7 @@
             text-align: center;
             margin-top: 100px;
         }
+
         section img {
             margin-left: 65px;
         }
@@ -56,7 +58,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="page-header">
         <h1>Five cities to visit</h1>
     </header>
 
@@ -69,20 +71,30 @@
     </nav>
 
     <main>
-        <h1>Description ! ! !</h1>
-        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi perspiciatis magnam vero deserunt molestiae
-            qui harum voluptatum nihil autem ratione similique, eos nemo perferendis quis, saepe, porro doloribus nisi.
-            <br />
-        </p>
+        <header>
+            <h1>Description ! ! !</h1>
+
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi perspiciatis magnam vero deserunt
+                molestiae
+                qui harum voluptatum nihil autem ratione similique, eos nemo perferendis quis, saepe, porro doloribus
+                nisi.
+            </p>
+        </header>
+
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vero nulla perspiciatis natus vel nostrum
             molestiae asperiores ullam corrupti. Voluptatibus, alias in? Velit corporis libero rerum id nam vero eius?
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eius ipsum deserunt et ipsam, libero amet
             at, placeat enim mollitia eos vel. Voluptatum odit maiores ipsum nisi neque, fugit nihil!
         </p>
     </main>
+
     <article>
-        <h1>Why you need to travel ? </h1>
-        <h3>Travel takes us out of our comfort zones and inspires us to see, taste and try new things</h3>
+        <header>
+            <h1>Why you need to travel ? </h1>
+
+            <h3>Travel takes us out of our comfort zones and inspires us to see, taste and try new things</h3>
+        </header>
+
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error aliquam in aliquid, exercitationem officia
             ipsa quidem omnis neque totam maxime soluta culpa magni illo? Repellat culpa ipsa facilis accusantium.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut itaque obcaecati praesentium facilis illum
@@ -90,13 +102,25 @@
             eveniet.
         </p>
     </article>
+
     <section>
         <h1>Gallery</h1>
-        <img src="https://diez.md/wp-content/uploads/2017/02/Paris-France.jpg" alt="Paris" height="200px" width="300px">
-        <img src="https://diez.md/wp-content/uploads/2017/02/New-York.jpg" alt="New York" height="200px" width="300px">
-        <img src="https://diez.md/wp-content/uploads/2017/02/London.jpg" alt="Londra" height="200px" width="300px">
-        <img src="https://diez.md/wp-content/uploads/2017/02/Venetia.jpg" alt="Venetia" height="200px" width="300px">
-        <img src="https://diez.md/wp-content/uploads/2017/02/Hong-Gong.jpg" alt="Hong Kong" height="200px"width="300px">
+
+        <div>
+            <img src="https://diez.md/wp-content/uploads/2017/02/Paris-France.jpg" alt="Paris" height="200px"
+                width="300px">
+
+            <img src="https://diez.md/wp-content/uploads/2017/02/New-York.jpg" alt="New York" height="200px"
+                width="300px">
+
+            <img src="https://diez.md/wp-content/uploads/2017/02/London.jpg" alt="Londra" height="200px" width="300px">
+            
+            <img src="https://diez.md/wp-content/uploads/2017/02/Venetia.jpg" alt="Venetia" height="200px"
+                width="300px">
+                
+            <img src="https://diez.md/wp-content/uploads/2017/02/Hong-Gong.jpg" alt="Hong Kong" height="200px"
+                width="300px">
+        </div>
     </section>
 
 
