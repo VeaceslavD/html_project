@@ -1,0 +1,149 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: aliceblue;
+}
+
+.navigation-bar {
+  height: 70px;
+  background-color: rgb(15, 179, 179);
+  padding: 0 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-bar ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.navigation-bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #1dafd4;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.page-header {
+  text-align: center;
+  height: 35%;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/004/928/975/non_2x/travel-around-the-world-landmark-design-famous-landmarks-around-the-world-elements-with-travel-vacation-text-in-blue-background-illustration-vector.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-header h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: grey;
+  padding: 15px;
+}
+
+.home-information-section {
+  height: 700px;
+  display: flex;
+  padding: 0px 80px;
+}
+
+.home-description-first-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-description-first-side-info-header h1 {
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+  color: dimgray;
+  font-family: sans-serif;
+}
+
+.home-description-first-side-info-header p {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.home-description-first-side-photo img {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.home-description-second-side {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-description-second-side-info-header h1 {
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+  color: dimgray;
+  font-family: sans-serif;
+}
+
+.home-description-second-side-info-header p {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.home-description-second-side-photo img {
+  height: 400px;
+  width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.home-gallery-text {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  color: dimgray;
+  font-family: sans-serif;
+}
+
+.home-gallery-images-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding: 0 80px;
+}
+
+.home-gallery-images {
+  border: 2px solid #ccc;
+  margin-top: 15px;
+}
+
+.home-gallery-images img {
+  height: 250px;
+  width: 400px;
+}
+
+.home-gallery-images:hover {
+  border: 2px solid #777;
+}
+
+.home-gallery-description {
+  padding: 15px;
+  text-align: center;
+}
+
+footer {
+  margin: 20px 0;
+  height: 100px;
+  background-color: #777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
