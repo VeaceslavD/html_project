@@ -980,6 +980,273 @@ body {
 }
 
 
+.venice-header {
+  text-align: center;
+  height: 500px;
+  background-image: url("/assets/media/venice-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.venice-header-overlay {
+  background-color: #00000088;
+  height: 100%;
+  width: 100%;
+  padding: 50px 80px;
+}
+
+.venice-header-overlay h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  color: #ffff;
+}
+
+.venice-header-side {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.venice-header-side-info {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.venice-header-side-info p {
+  color: #ffff;
+  padding-top: 70px;
+  font-size: 20px;
+}
+
+.venice-header-side-info a {
+  text-decoration: none;
+  font-size: 20px;
+  background-color:darksalmon;
+  color: #ffff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.venice-restaurants {
+  background-color: aliceblue;
+  height: 750px;
+  padding: 0 80px;
+}
+
+.venice-restaurants h1 {
+  font-size: 30px;
+  text-align: center;
+  color: dimgray;
+  font-family: sans-serif;
+  padding: 50px 80px;
+}
+
+.venice-restaurants-side {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 400px;
+} 
+
+.venice-top-restaurants {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+ 
+.venice-top-restaurants p {
+ font-size: 20px;
+ font-family: sans-serif;
+ padding: 10px;
+ color: indianred;
+}
+.venice-top-restaurants img {
+  border-radius: 15px;
+  height: 250px;
+  width: 400px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.second {
+  margin-top: 100px;
+}
+
+.venice-top-restaurants a {
+  text-decoration: none;
+  font-size: 15px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color:lightslategrey;
+  color: #ffff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+  width: 200px;
+}
+
+.venice-great-places {
+  background-color: lightslategray;
+  height: 1100px;
+  padding: 0 80px;
+}
+
+.venice-great-places h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #ffff;
+  font-family: sans-serif;
+  padding: 50px 80px;
+}
+
+.venice-great-places-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+  
+.venice-great-places-container-side {
+ position: relative;
+}
+.venice-great-places-container-side:hover .venice-great-places-container-side-canal-info {
+  opacity: 1;
+}
+.venice-great-places-container-side:hover .venice-great-places-container-side-bridge-info {
+  opacity: 1;
+}
+.venice-great-places-container-side:hover .venice-great-places-container-side-doge-info {
+  opacity: 1;
+}
+.venice-great-places-container-side:hover .venice-great-places-container-side-basilica-info {
+  opacity: 1;
+}
+
+.venice-great-places-container-side header h3 {
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 10px;
+  color:aliceblue;
+  text-align: center;
+}
+
+.venice-great-places-container-side header img {
+  height: 400px;
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.venice-great-places-container-side-canal-info {
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 410px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:#292d33;
+}
+
+.venice-great-places-container-side-canal-info p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  transform: translate(-0%, -0%);
+  -ms-transform: translate(-0%, -0%);
+}
+
+.venice-great-places-container-side-bridge-info {
+  position: absolute;
+  top: 40;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 410px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #292d33;
+}
+
+.venice-great-places-container-side-bridge-info  p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  transform: translate(-0%, -0%);
+  -ms-transform: translate(-0%, -0%);
+}
+
+.venice-great-places-container-side-doge-info {
+  position: absolute;
+  top: 40;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 410px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #292d33;
+}
+
+.venice-great-places-container-side-doge-info  p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  transform: translate(-0%, -0%);
+  -ms-transform: translate(-0%, -0%);
+}
+
+.venice-great-places-container-side-basilica-info {
+  position: absolute;
+  top: 40;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 410px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #292d33;
+}
+
+.venice-great-places-container-side-basilica-info  p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  transform: translate(-0%, -0%);
+  -ms-transform: translate(-0%, -0%);
+}
+
+
 
 
 footer {
