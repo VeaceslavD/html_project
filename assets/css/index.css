@@ -176,7 +176,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  
 }
 
 .paris-header-overlay {
@@ -238,7 +237,7 @@ body {
 
 .paris-restaurants {
   background-color: aliceblue;
-  height: 650px;
+  height: 750px;
   padding: 0 80px;
 }
 
@@ -255,7 +254,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 10px;
   height: 400px;
 } 
 
@@ -264,6 +262,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  gap: 10px;
 }
  
 .paris-top-restaurants p {
@@ -446,6 +445,276 @@ body {
   transform: translate(-0%, -0%);
   -ms-transform: translate(-0%, -0%);
 }
+
+.newyork-header {
+  text-align: center;
+  height: 500px;
+  background-image: url("/assets/media/newyork-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+ /*  background-position: center; */
+}
+
+.newyork-header-overlay {
+  background-color: #00000088;
+  height: 100%;
+  width: 100%;
+  padding: 50px 80px;
+}
+
+.newyork-header-overlay h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  color: #ffff;
+}
+
+.newyork-header-side {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.newyork-header-side-info {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.newyork-header-side-info p {
+  color: #ffff;
+  padding-top: 70px;
+  font-size: 20px;
+}
+
+.newyork-header-side-info a {
+  text-decoration: none;
+  font-size: 20px;
+  background-color:darksalmon;
+  color: #ffff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+
+.newyork-restaurants {
+  background-color: aliceblue;
+  height: 750px;
+  padding: 0 80px;
+}
+
+.newyork-restaurants h1 {
+  font-size: 30px;
+  text-align: center;
+  color: dimgray;
+  font-family: sans-serif;
+  padding: 50px 80px;
+}
+
+.newyork-restaurants-side {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 400px;
+} 
+
+.newyork-top-restaurants {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+ 
+.newyork-top-restaurants p {
+ font-size: 20px;
+ font-family: sans-serif;
+ padding: 10px;
+ color: indianred;
+}
+.newyork-top-restaurants img {
+  border-radius: 15px;
+  height: 250px;
+  width: 400px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.second {
+  margin-top: 100px;
+}
+
+.newyork-top-restaurants a {
+  text-decoration: none;
+  font-size: 15px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color:lightslategrey;
+  color: #ffff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+  width: 200px;
+}
+
+
+.newyork-great-places {
+  background-color: lightslategray;
+  height: 1100px;
+  padding: 0 80px;
+}
+
+.newyork-great-places h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #ffff;
+  font-family: sans-serif;
+  padding: 50px 80px;
+}
+
+.newyork-great-places-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+  
+.newyork-great-places-container-side {
+ position: relative;
+}
+.newyork-great-places-container-side:hover .newyork-great-places-container-side-statue-info {
+  opacity: 1;
+}
+.newyork-great-places-container-side:hover .newyork-great-places-container-side-park-info {
+  opacity: 1;
+}
+.newyork-great-places-container-side:hover .newyork-great-places-container-side-center-info {
+  opacity: 1;
+}
+.newyork-great-places-container-side:hover .newyork-great-places-container-side-metropolitan-info {
+  opacity: 1;
+}
+
+.newyork-great-places-container-side header h3 {
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 10px;
+  color:aliceblue;
+  text-align: center;
+}
+
+.newyork-great-places-container-side header img {
+  height: 400px;
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.newyork-great-places-container-side-statue-info {
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 410px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:#292d33;
+}
+
+.newyork-great-places-container-side-statue-info p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  transform: translate(-0%, -0%);
+  -ms-transform: translate(-0%, -0%);
+}
+
+.newyork-great-places-container-side-park-info {
+  position: absolute;
+  top: 40;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 410px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #292d33;
+}
+
+.newyork-great-places-container-side-park-info  p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  transform: translate(-0%, -0%);
+  -ms-transform: translate(-0%, -0%);
+}
+
+.newyork-great-places-container-side-center-info {
+  position: absolute;
+  top: 40;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 410px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #292d33;
+}
+
+.newyork-great-places-container-side-center-info  p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  transform: translate(-0%, -0%);
+  -ms-transform: translate(-0%, -0%);
+}
+
+.newyork-great-places-container-side-metropolitan-info {
+  position: absolute;
+  top: 40;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 410px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #292d33;
+}
+
+.newyork-great-places-container-side-metropolitan-info  p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  transform: translate(-0%, -0%);
+  -ms-transform: translate(-0%, -0%);
+}
+
+
+
 
 footer {
   margin: 20px 0;
