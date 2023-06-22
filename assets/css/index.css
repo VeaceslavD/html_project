@@ -6,12 +6,11 @@
 html,
 body {
   height: 100%;
-  background-color: aliceblue;
 }
 
 .navigation-bar {
   height: 70px;
-  background-color: rgb(15, 179, 179);
+  background-color: #292d33;
   padding: 0 80px;
   display: flex;
   justify-content: center;
@@ -23,20 +22,24 @@ body {
   margin-left: 30px;
 }
 
+.navigation-bar ul li:hover {
+  background-color: darksalmon;
+  border-radius: 5px;
+}
+
 .navigation-bar a {
   text-decoration: none;
   color: white;
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #1dafd4;
-  border-radius: 5px;
   padding: 5px;
 }
 
 .page-header {
   text-align: center;
-  height: 35%;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/004/928/975/non_2x/travel-around-the-world-landmark-design-famous-landmarks-around-the-world-elements-with-travel-vacation-text-in-blue-background-illustration-vector.jpg");
+  height: 60%;
+  background-image: url("/assets/media/bg-header.webp");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -47,9 +50,10 @@ body {
 }
 
 .home-information-section {
-  height: 700px;
+  height: 800px;
   display: flex;
-  padding: 0px 80px;
+  padding: 50px 80px;
+  background-color: aliceblue;
 }
 
 .home-description-first-side {
@@ -104,10 +108,14 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.home-gallery {
+  background-color: #ffdcd0;
+  padding: 20px 80px;
+}
+
 .home-gallery-text {
   font-size: 20px;
   text-align: center;
-  margin: 20px;
   color: dimgray;
   font-family: sans-serif;
 }
@@ -117,17 +125,23 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 30px;
-  padding: 0 80px;
 }
 
 .home-gallery-images {
   border: 2px solid #ccc;
   margin-top: 15px;
+  background-color: #292d33;
+  border-radius: 14px;
+}
+
+.home-gallery-images p {
+  color: aliceblue;
 }
 
 .home-gallery-images img {
   height: 250px;
   width: 400px;
+  border-radius: 14px 14px 0 0;
 }
 
 .home-gallery-images:hover {
@@ -137,6 +151,300 @@ body {
 .home-gallery-description {
   padding: 15px;
   text-align: center;
+}
+
+.break-section {
+  height: 200px;
+  background-color: #292d33;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.break-section  h1 {
+  color: white;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.paris-header {
+  text-align: center;
+  height: 500px;
+  background-image: url("/assets/media/paris-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+.paris-header-overlay {
+  background-color: #00000088;
+  height: 100%;
+  width: 100%;
+  padding: 50px 80px;
+}
+
+.paris-header-overlay h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  color: #ffff;
+}
+
+.paris-header-side {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.paris-header-first-side {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.love {
+  color: darksalmon;
+}
+
+.paris-header-first-side p {
+  color: #ffff;
+  padding-top: 70px;
+  font-size: 20px;
+}
+.paris-header-first-side a {
+  text-decoration: none;
+  font-size: 20px;
+  background-color:darksalmon;
+  color: #ffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.paris-header-second-side {
+  height: 300px;
+  width: 500px;
+}
+
+.paris-header-second-side p {
+  color: #ffff;
+  padding-top: 110px;
+  font-size: 20px;
+}
+
+.paris-restaurants {
+  background-color: aliceblue;
+  height: 650px;
+  padding: 0 80px;
+}
+
+.paris-restaurants h1 {
+  font-size: 30px;
+  text-align: center;
+  color: dimgray;
+  font-family: sans-serif;
+  padding: 50px 80px;
+}
+
+.paris-restaurants-side {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  height: 400px;
+} 
+
+.paris-top-restaurants {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+ 
+.paris-top-restaurants p {
+ font-size: 20px;
+ font-family: sans-serif;
+ padding: 10px;
+ color: indianred;
+}
+.paris-top-restaurants img {
+  border-radius: 15px;
+  height: 250px;
+  width: 400px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.second {
+  margin-top: 100px;
+}
+
+.paris-top-restaurants a {
+  text-decoration: none;
+  font-size: 15px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color:lightslategrey;
+  color: #ffff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+  width: 200px;
+}
+
+.paris-great-places {
+  background-color: lightslategray;
+  height: 1100px;
+  padding: 0 80px;
+}
+
+.paris-great-places h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #ffff;
+  font-family: sans-serif;
+  padding: 50px 80px;
+}
+
+.paris-great-places-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+  
+
+.paris-great-places-container-side {
+ position: relative;
+}
+.paris-great-places-container-side:hover .paris-great-places-container-side-eiffel-info {
+  opacity: 1;
+}
+.paris-great-places-container-side:hover .paris-great-places-container-side-musee-info {
+  opacity: 1;
+}
+.paris-great-places-container-side:hover .paris-great-places-container-side-arc-info {
+  opacity: 1;
+}
+.paris-great-places-container-side:hover .paris-great-places-container-side-chateau-info {
+  opacity: 1;
+}
+
+.paris-great-places-container-side header h3 {
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 10px;
+  color:aliceblue;
+  text-align: center;
+}
+
+.paris-great-places-container-side header img {
+  height: 400px;
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.paris-great-places-container-side-eiffel-info {
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 410px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:#292d33;
+}
+
+.paris-great-places-container-side-eiffel-info p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  transform: translate(-0%, -0%);
+  -ms-transform: translate(-0%, -0%);
+}
+
+.paris-great-places-container-side-musee-info {
+  position: absolute;
+  top: 40;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 410px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #292d33;
+}
+
+.paris-great-places-container-side-musee-info  p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  transform: translate(-0%, -0%);
+  -ms-transform: translate(-0%, -0%);
+}
+
+.paris-great-places-container-side-arc-info {
+  position: absolute;
+  top: 40;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 410px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #292d33;
+}
+
+.paris-great-places-container-side-arc-info  p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  transform: translate(-0%, -0%);
+  -ms-transform: translate(-0%, -0%);
+}
+
+.paris-great-places-container-side-chateau-info {
+  position: absolute;
+  top: 40;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 410px;
+  width: 500px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #292d33;
+}
+
+.paris-great-places-container-side-chateau-info  p {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  transform: translate(-0%, -0%);
+  -ms-transform: translate(-0%, -0%);
 }
 
 footer {
