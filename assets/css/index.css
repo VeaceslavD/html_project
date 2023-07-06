@@ -35,9 +35,14 @@ body {
   padding: 5px;
 }
 
+.navigation-bar i {
+  display: none;
+  font-size: 30px;
+  color: #fff;
+}
 .page-header {
   text-align: center;
-  height: 60%;
+  padding: 50px 80px;
   background-image: url("/assets/media/bg-header.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -49,14 +54,14 @@ body {
 }
 
 .page-header-text {
-  border: 2px solid indianred;
   background-color: rgba(205, 92, 92, 0.3);
-  height: 300px;
-  width: 400px;
+  padding: 20px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  gap: 40px;
 }
 
 .page-header-text h1 {
@@ -79,8 +84,8 @@ body {
 }
 
 .home-information-section {
-  height: 800px;
   display: flex;
+  gap: 20px;
   padding: 50px 80px;
   background-color: aliceblue;
 }
@@ -90,6 +95,8 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  gap: 15px;
+  width: 50%;
 }
 
 .home-description-first-side-info-header h1 {
@@ -106,6 +113,8 @@ body {
 }
 
 .home-description-first-side-photo img {
+  width: 100%;
+  height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -115,6 +124,8 @@ body {
   flex-direction: column-reverse;
   justify-content: space-around;
   align-items: center;
+  gap: 15px;
+  width: 50%;
 }
 
 .home-description-second-side-info-header h1 {
@@ -131,8 +142,8 @@ body {
 }
 
 .home-description-second-side-photo img {
-  height: 400px;
-  width: 600px;
+  width: 100%;
+  height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -140,6 +151,9 @@ body {
 .home-gallery {
   background-color: #ffdcd0;
   padding: 20px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .home-gallery-text {
@@ -151,16 +165,16 @@ body {
 
 .home-gallery-images-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  margin-top: 30px;
+  gap: 40px;
 }
 
 .home-gallery-images {
   border: 2px solid #ccc;
-  margin-top: 15px;
   background-color: #292d33;
   border-radius: 14px;
+  max-width: 400px;
 }
 
 .home-gallery-images p {
@@ -168,8 +182,8 @@ body {
 }
 
 .home-gallery-images img {
-  height: 250px;
-  width: 400px;
+  max-height: 250px;
+  width: 100%;
   border-radius: 14px 14px 0 0;
 }
 
@@ -192,85 +206,74 @@ body {
   align-items: center;
 }
 
-.break-section  h1 {
+.break-section h1 {
   color: white;
   font-size: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.paris-header {
+.city-header {
   text-align: center;
-  height: 500px;
   background-image: url("/assets/media/paris-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.paris-header-overlay {
+.city-header-overlay {
   background-color: #00000088;
   height: 100%;
   width: 100%;
   padding: 50px 80px;
 }
 
-.paris-header-overlay h1 {
+.city-header-overlay h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 40px;
   color: #ffff;
 }
 
-.paris-header-side {
+.city-header-side {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  padding-top: 30px;
 }
 
-.paris-header-first-side {
-  height: 400px;
-  width: 400px;
+.city-header-side-info {
+  max-width: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .love {
   color: darksalmon;
 }
 
-.paris-header-first-side p {
+.city-header-side p {
   color: #ffff;
-  padding-top: 70px;
   font-size: 20px;
 }
-.paris-header-first-side a {
+
+.city-header-side a {
   text-decoration: none;
   font-size: 20px;
-  background-color:darksalmon;
+  background-color: darksalmon;
   color: #ffff;
   padding: 10px;
   border-radius: 10px;
 }
 
-.paris-header-second-side {
-  height: 300px;
-  width: 500px;
-}
-
-.paris-header-second-side p {
-  color: #ffff;
-  padding-top: 110px;
-  font-size: 20px;
-}
-
-.paris-restaurants {
+.restaurants {
   background-color: aliceblue;
-  height: 750px;
-  padding: 0 80px;
+  padding: 50px 80px;
 }
 
-.paris-restaurants h1 {
+.restaurants h1 {
   font-size: 30px;
   text-align: center;
   color: dimgray;
@@ -278,32 +281,32 @@ body {
   padding: 50px 80px;
 }
 
-.paris-restaurants-side {
+.restaurants-side {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 400px;
-} 
+}
 
-.paris-top-restaurants {
+.top-restaurants {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   gap: 10px;
 }
- 
-.paris-top-restaurants p {
- font-size: 20px;
- font-family: sans-serif;
- padding: 10px;
- color: indianred;
+
+.top-restaurants p {
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 10px;
+  color: indianred;
 }
-.paris-top-restaurants img {
+
+.top-restaurants img {
   border-radius: 15px;
-  height: 250px;
-  width: 400px;
+  max-height: 250px;
+  max-width: 400px;
   padding: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -312,277 +315,11 @@ body {
   margin-top: 100px;
 }
 
-.paris-top-restaurants a {
+.top-restaurants a {
   text-decoration: none;
   font-size: 15px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-color:lightslategrey;
-  color: #ffff;
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 10px;
-  width: 200px;
-}
-
-.paris-great-places {
-  background-color: lightslategray;
-  height: 1100px;
-  padding: 0 80px;
-}
-
-.paris-great-places h1 {
-  font-size: 30px;
-  text-align: center;
-  color: #ffff;
-  font-family: sans-serif;
-  padding: 50px 80px;
-}
-
-.paris-great-places-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-bottom: 20px;
-}
-  
-
-.paris-great-places-container-side {
- position: relative;
-}
-.paris-great-places-container-side:hover .paris-great-places-container-side-eiffel-info {
-  opacity: 1;
-}
-.paris-great-places-container-side:hover .paris-great-places-container-side-musee-info {
-  opacity: 1;
-}
-.paris-great-places-container-side:hover .paris-great-places-container-side-arc-info {
-  opacity: 1;
-}
-.paris-great-places-container-side:hover .paris-great-places-container-side-chateau-info {
-  opacity: 1;
-}
-
-.paris-great-places-container-side header h3 {
-  font-size: 20px;
-  font-family: sans-serif;
-  padding: 10px;
-  color:aliceblue;
-  text-align: center;
-}
-
-.paris-great-places-container-side header img {
-  height: 400px;
-  width: 500px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.paris-great-places-container-side-eiffel-info {
-  position: absolute;
-  top: 40px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color:#292d33;
-}
-
-.paris-great-places-container-side-eiffel-info p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-.paris-great-places-container-side-musee-info {
-  position: absolute;
-  top: 40;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #292d33;
-}
-
-.paris-great-places-container-side-musee-info  p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  padding: 15px;
-  top: 0;
-  left: 0;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-.paris-great-places-container-side-arc-info {
-  position: absolute;
-  top: 40;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #292d33;
-}
-
-.paris-great-places-container-side-arc-info  p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  padding: 15px;
-  top: 0;
-  left: 0;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-.paris-great-places-container-side-chateau-info {
-  position: absolute;
-  top: 40;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #292d33;
-}
-
-.paris-great-places-container-side-chateau-info  p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  padding: 15px;
-  top: 0;
-  left: 0;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-.newyork-header {
-  text-align: center;
-  height: 500px;
-  background-image: url("/assets/media/newyork-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.newyork-header-overlay {
-  background-color: #00000088;
-  height: 100%;
-  width: 100%;
-  padding: 50px 80px;
-}
-
-.newyork-header-overlay h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 40px;
-  color: #ffff;
-}
-
-.newyork-header-side {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.newyork-header-side-info {
-  height: 400px;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.newyork-header-side-info p {
-  color: #ffff;
-  padding-top: 70px;
-  font-size: 20px;
-}
-
-.newyork-header-side-info a {
-  text-decoration: none;
-  font-size: 20px;
-  background-color:darksalmon;
-  color: #ffff;
-  padding: 10px;
-  border-radius: 10px;
-  width: 200px;
-}
-
-
-.newyork-restaurants {
-  background-color: aliceblue;
-  height: 750px;
-  padding: 0 80px;
-}
-
-.newyork-restaurants h1 {
-  font-size: 30px;
-  text-align: center;
-  color: dimgray;
-  font-family: sans-serif;
-  padding: 50px 80px;
-}
-
-.newyork-restaurants-side {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 400px;
-} 
-
-.newyork-top-restaurants {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
-}
- 
-.newyork-top-restaurants p {
- font-size: 20px;
- font-family: sans-serif;
- padding: 10px;
- color: indianred;
-}
-.newyork-top-restaurants img {
-  border-radius: 15px;
-  height: 250px;
-  width: 400px;
-  padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.second {
-  margin-top: 100px;
-}
-
-.newyork-top-restaurants a {
-  text-decoration: none;
-  font-size: 15px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-color:lightslategrey;
+  background-color: lightslategrey;
   color: #ffff;
   padding: 10px;
   border-radius: 10px;
@@ -591,14 +328,15 @@ body {
   width: 200px;
 }
 
-
-.newyork-great-places {
+.great-places {
   background-color: lightslategray;
-  height: 1100px;
-  padding: 0 80px;
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.newyork-great-places h1 {
+.great-places h1 {
   font-size: 30px;
   text-align: center;
   color: #ffff;
@@ -606,937 +344,56 @@ body {
   padding: 50px 80px;
 }
 
-.newyork-great-places-container {
+.great-places-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-bottom: 20px;
 }
-  
-.newyork-great-places-container-side {
- position: relative;
+
+.great-places-container-side {
+  position: relative;
+  max-width: 500px;
 }
-.newyork-great-places-container-side:hover .newyork-great-places-container-side-statue-info {
-  opacity: 1;
-}
-.newyork-great-places-container-side:hover .newyork-great-places-container-side-park-info {
-  opacity: 1;
-}
-.newyork-great-places-container-side:hover .newyork-great-places-container-side-center-info {
-  opacity: 1;
-}
-.newyork-great-places-container-side:hover .newyork-great-places-container-side-metropolitan-info {
+
+.great-places-container-side:hover .great-places-container-side-info {
   opacity: 1;
 }
 
-.newyork-great-places-container-side header h3 {
+.great-places-container-side header h3 {
   font-size: 20px;
   font-family: sans-serif;
   padding: 10px;
-  color:aliceblue;
+  color: aliceblue;
   text-align: center;
 }
 
-.newyork-great-places-container-side header img {
-  height: 400px;
-  width: 500px;
+.great-places-container-side header img {
+  max-width: 100%;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.newyork-great-places-container-side-statue-info {
+.great-places-container-side-info {
   position: absolute;
   top: 40px;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 410px;
-  width: 500px;
+  max-height: 410px;
+  max-width: 500px;
   opacity: 0;
-  transition: .5s ease;
-  background-color:#292d33;
-}
-
-.newyork-great-places-container-side-statue-info p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-.newyork-great-places-container-side-park-info {
-  position: absolute;
-  top: 40;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: #292d33;
 }
 
-.newyork-great-places-container-side-park-info  p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  padding: 15px;
-  top: 0;
-  left: 0;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-.newyork-great-places-container-side-center-info {
-  position: absolute;
-  top: 40;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #292d33;
-}
-
-.newyork-great-places-container-side-center-info  p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  padding: 15px;
-  top: 0;
-  left: 0;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-.newyork-great-places-container-side-metropolitan-info {
-  position: absolute;
-  top: 40;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #292d33;
-}
-
-.newyork-great-places-container-side-metropolitan-info  p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  padding: 15px;
-  top: 0;
-  left: 0;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-.london-header {
-  text-align: center;
-  height: 500px;
-  background-image: url("/assets/media/london-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
-.london-header-overlay {
-  background-color: #00000088;
-  height: 100%;
-  width: 100%;
-  padding: 50px 80px;
-}
-
-.london-header-overlay h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 40px;
-  color: #ffff;
-}
-
-.london-header-side {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.london-header-side-info {
-  height: 400px;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.london-header-side-info p {
-  color: #ffff;
-  padding-top: 70px;
-  font-size: 20px;
-}
-
-.london-header-side-info a {
-  text-decoration: none;
-  font-size: 20px;
-  background-color:darksalmon;
-  color: #ffff;
-  padding: 10px;
-  border-radius: 10px;
-  width: 200px;
-}
-
-.london-restaurants {
-  background-color: aliceblue;
-  height: 750px;
-  padding: 0 80px;
-}
-
-.london-restaurants h1 {
-  font-size: 30px;
-  text-align: center;
-  color: dimgray;
-  font-family: sans-serif;
-  padding: 50px 80px;
-}
-
-.london-restaurants-side {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 400px;
-} 
-
-.london-top-restaurants {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
-}
- 
-.london-top-restaurants p {
- font-size: 20px;
- font-family: sans-serif;
- padding: 10px;
- color: indianred;
-}
-.london-top-restaurants img {
-  border-radius: 15px;
-  height: 250px;
-  width: 400px;
-  padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.second {
-  margin-top: 100px;
-}
-
-.london-top-restaurants a {
-  text-decoration: none;
-  font-size: 15px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-color:lightslategrey;
-  color: #ffff;
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 10px;
-  width: 200px;
-}
-
-
-.london-great-places {
-  background-color: lightslategray;
-  height: 1100px;
-  padding: 0 80px;
-}
-
-.london-great-places h1 {
-  font-size: 30px;
-  text-align: center;
-  color: #ffff;
-  font-family: sans-serif;
-  padding: 50px 80px;
-}
-
-.london-great-places-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-bottom: 20px;
-}
-  
-.london-great-places-container-side {
- position: relative;
-}
-.london-great-places-container-side:hover .london-great-places-container-side-eye-info {
-  opacity: 1;
-}
-.london-great-places-container-side:hover .london-great-places-container-side-madame-info {
-  opacity: 1;
-}
-.london-great-places-container-side:hover .london-great-places-container-side-palace-info {
-  opacity: 1;
-}
-.london-great-places-container-side:hover .london-great-places-container-side-cathedral-info {
-  opacity: 1;
-}
-
-.london-great-places-container-side header h3 {
-  font-size: 20px;
-  font-family: sans-serif;
-  padding: 10px;
-  color:aliceblue;
-  text-align: center;
-}
-
-.london-great-places-container-side header img {
-  height: 400px;
-  width: 500px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.london-great-places-container-side-eye-info {
-  position: absolute;
-  top: 40px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color:#292d33;
-}
-
-.london-great-places-container-side-eye-info p {
+.great-places-container-side-info p {
   color: white;
   font-size: 20px;
   position: absolute;
   top: 0;
   left: 0;
   padding: 10px;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-.london-great-places-container-side-madame-info {
-  position: absolute;
-  top: 40;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #292d33;
-}
-
-.london-great-places-container-side-madame-info  p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  padding: 15px;
-  top: 0;
-  left: 0;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-.london-great-places-container-side-palace-info {
-  position: absolute;
-  top: 40;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #292d33;
-}
-
-.london-great-places-container-side-palace-info  p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  padding: 15px;
-  top: 0;
-  left: 0;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-.london-great-places-container-side-cathedral-info {
-  position: absolute;
-  top: 40;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #292d33;
-}
-
-.london-great-places-container-side-cathedral-info  p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  padding: 15px;
-  top: 0;
-  left: 0;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-
-.venice-header {
-  text-align: center;
-  height: 500px;
-  background-image: url("/assets/media/venice-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
-.venice-header-overlay {
-  background-color: #00000088;
-  height: 100%;
-  width: 100%;
-  padding: 50px 80px;
-}
-
-.venice-header-overlay h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 40px;
-  color: #ffff;
-}
-
-.venice-header-side {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.venice-header-side-info {
-  height: 400px;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.venice-header-side-info p {
-  color: #ffff;
-  padding-top: 70px;
-  font-size: 20px;
-}
-
-.venice-header-side-info a {
-  text-decoration: none;
-  font-size: 20px;
-  background-color:darksalmon;
-  color: #ffff;
-  padding: 10px;
-  border-radius: 10px;
-  width: 200px;
-}
-
-.venice-restaurants {
-  background-color: aliceblue;
-  height: 750px;
-  padding: 0 80px;
-}
-
-.venice-restaurants h1 {
-  font-size: 30px;
-  text-align: center;
-  color: dimgray;
-  font-family: sans-serif;
-  padding: 50px 80px;
-}
-
-.venice-restaurants-side {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 400px;
-} 
-
-.venice-top-restaurants {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
-}
- 
-.venice-top-restaurants p {
- font-size: 20px;
- font-family: sans-serif;
- padding: 10px;
- color: indianred;
-}
-.venice-top-restaurants img {
-  border-radius: 15px;
-  height: 250px;
-  width: 400px;
-  padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.second {
-  margin-top: 100px;
-}
-
-.venice-top-restaurants a {
-  text-decoration: none;
-  font-size: 15px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-color:lightslategrey;
-  color: #ffff;
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 10px;
-  width: 200px;
-}
-
-.venice-great-places {
-  background-color: lightslategray;
-  height: 1100px;
-  padding: 0 80px;
-}
-
-.venice-great-places h1 {
-  font-size: 30px;
-  text-align: center;
-  color: #ffff;
-  font-family: sans-serif;
-  padding: 50px 80px;
-}
-
-.venice-great-places-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-bottom: 20px;
-}
-  
-.venice-great-places-container-side {
- position: relative;
-}
-.venice-great-places-container-side:hover .venice-great-places-container-side-canal-info {
-  opacity: 1;
-}
-.venice-great-places-container-side:hover .venice-great-places-container-side-bridge-info {
-  opacity: 1;
-}
-.venice-great-places-container-side:hover .venice-great-places-container-side-doge-info {
-  opacity: 1;
-}
-.venice-great-places-container-side:hover .venice-great-places-container-side-basilica-info {
-  opacity: 1;
-}
-
-.venice-great-places-container-side header h3 {
-  font-size: 20px;
-  font-family: sans-serif;
-  padding: 10px;
-  color:aliceblue;
-  text-align: center;
-}
-
-.venice-great-places-container-side header img {
-  height: 400px;
-  width: 500px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.venice-great-places-container-side-canal-info {
-  position: absolute;
-  top: 40px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color:#292d33;
-}
-
-.venice-great-places-container-side-canal-info p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-.venice-great-places-container-side-bridge-info {
-  position: absolute;
-  top: 40;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #292d33;
-}
-
-.venice-great-places-container-side-bridge-info  p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  padding: 15px;
-  top: 0;
-  left: 0;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-.venice-great-places-container-side-doge-info {
-  position: absolute;
-  top: 40;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #292d33;
-}
-
-.venice-great-places-container-side-doge-info  p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  padding: 15px;
-  top: 0;
-  left: 0;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-.venice-great-places-container-side-basilica-info {
-  position: absolute;
-  top: 40;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #292d33;
-}
-
-.venice-great-places-container-side-basilica-info  p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  padding: 15px;
-  top: 0;
-  left: 0;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-.hongkong-header {
-  text-align: center;
-  height: 500px;
-  background-image: url("/assets/media/hongkong-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
-.hongkong-header-overlay {
-  background-color: #00000088;
-  height: 100%;
-  width: 100%;
-  padding: 50px 80px;
-}
-
-.hongkong-header-overlay h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 40px;
-  color: #ffff;
-}
-
-.hongkong-header-side {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.hongkong-header-side-info {
-  height: 400px;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.hongkong-header-side-info p {
-  color: #ffff;
-  padding-top: 70px;
-  font-size: 20px;
-}
-
-.hongkong-header-side-info a {
-  text-decoration: none;
-  font-size: 20px;
-  background-color:darksalmon;
-  color: #ffff;
-  padding: 10px;
-  border-radius: 10px;
-  width: 200px;
-}
-
-.hongkong-restaurants {
-  background-color: aliceblue;
-  height: 750px;
-  padding: 0 80px;
-}
-
-.hongkong-restaurants h1 {
-  font-size: 30px;
-  text-align: center;
-  color: dimgray;
-  font-family: sans-serif;
-  padding: 50px 80px;
-}
-
-.hongkong-restaurants-side {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 400px;
-} 
-
-.hongkong-top-restaurants {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
-}
- 
-.hongkong-top-restaurants p {
- font-size: 20px;
- font-family: sans-serif;
- padding: 10px;
- color: indianred;
-}
-.hongkong-top-restaurants img {
-  border-radius: 15px;
-  height: 250px;
-  width: 400px;
-  padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.second {
-  margin-top: 100px;
-}
-
-.hongkong-top-restaurants a {
-  text-decoration: none;
-  font-size: 15px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  background-color:lightslategrey;
-  color: #ffff;
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 10px;
-  width: 200px;
-}
-
-.hongkong-great-places {
-  background-color: lightslategray;
-  height: 1100px;
-  padding: 0 80px;
-}
-
-.hongkong-great-places h1 {
-  font-size: 30px;
-  text-align: center;
-  color: #ffff;
-  font-family: sans-serif;
-  padding: 50px 80px;
-}
-
-.hongkong-great-places-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-bottom: 20px;
-}
-  
-.hongkong-great-places-container-side {
- position: relative;
-}
-.hongkong-great-places-container-side:hover .hongkong-great-places-container-side-stars-info {
-  opacity: 1;
-}
-.hongkong-great-places-container-side:hover .hongkong-great-places-container-side-buddha-info {
-  opacity: 1;
-}
-.hongkong-great-places-container-side:hover .hongkong-great-places-container-side-garden-info {
-  opacity: 1;
-}
-.hongkong-great-places-container-side:hover .hongkong-great-places-container-side-disneyland-info {
-  opacity: 1;
-}
-
-.hongkong-great-places-container-side header h3 {
-  font-size: 20px;
-  font-family: sans-serif;
-  padding: 10px;
-  color:aliceblue;
-  text-align: center;
-}
-
-.hongkong-great-places-container-side header img {
-  height: 400px;
-  width: 500px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.hongkong-great-places-container-side-stars-info {
-  position: absolute;
-  top: 40px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color:#292d33;
-}
-
-.hongkong-great-places-container-side-stars-info p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-.hongkong-great-places-container-side-buddha-info {
-  position: absolute;
-  top: 40;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #292d33;
-}
-
-.hongkong-great-places-container-side-buddha-info  p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  padding: 15px;
-  top: 0;
-  left: 0;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-.hongkong-great-places-container-side-garden-info {
-  position: absolute;
-  top: 40;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #292d33;
-}
-
-.hongkong-great-places-container-side-garden-info  p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  padding: 15px;
-  top: 0;
-  left: 0;
-  transform: translate(-0%, -0%);
-  -ms-transform: translate(-0%, -0%);
-}
-
-.hongkong-great-places-container-side-disneyland-info {
-  position: absolute;
-  top: 40;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 410px;
-  width: 500px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #292d33;
-}
-
-.hongkong-great-places-container-side-disneyland-info  p {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  padding: 15px;
-  top: 0;
-  left: 0;
   transform: translate(-0%, -0%);
   -ms-transform: translate(-0%, -0%);
 }
@@ -1547,4 +404,81 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-bar ul {
+    display: none;
+    padding: 0 20px;
+  }
+
+  .navigation-bar i {
+    display: block;
+    text-align: center;
+  }
+
+  .page-header {
+    padding: 20px;
+  }
+
+  .home-information-section {
+    padding: 20px;
+    flex-direction: column;
+  }
+  
+  .home-description-first-side {
+    width: 100%;
+  }
+
+  .home-description-second-side {
+    width: 100%;
+  }
+  
+  .home-gallery {
+    padding: 20px;
+  }
+
+  .break-section {
+    padding: 20px;
+    text-align: center;
+  }
+  .city-header-overlay {
+    padding: 20px;
+  }
+
+  .city-header-side p {
+    font-size: 14px;
+  }
+
+  .city-header-side a {
+    font-size: 14px;
+  }
+
+  .restaurants {
+    padding: 20px;
+  }
+
+  .restaurants h1 {
+    padding: 20px 0px;
+  }
+
+  .restaurants-side {
+    gap: 20px;
+  }
+
+  .top-restaurants {
+    padding: 20px 20px;
+  }
+
+  .second {
+    margin: 0;
+  }
+
+  .great-places {
+    padding: 20px;
+  }
+
+  .great-places h1 {
+    padding: 20px;
+  }
 }
