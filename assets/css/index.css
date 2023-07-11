@@ -481,4 +481,8 @@ footer {
   .great-places h1 {
     padding: 20px;
   }
+
+  .great-places-container-side-info p {
+    font-size: 14px;
+  }
 }
